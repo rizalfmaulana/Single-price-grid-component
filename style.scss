@@ -22,29 +22,88 @@ main {
   justify-content: center;
   align-items: center;
   height: 90%;
+
   .container {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 10px;
+    min-width: 630px;
+    max-width: 730px;
+    border-radius: 10px;
+    box-shadow: 7px 15px 15px -8px $GrayishBlue;
     .a {
       grid-area: 1/1/3/3;
-      border: 1px solid black;
       background-color: white;
+      padding: 40px;
+      border-radius: 10px 10px 0 0;
       h2 {
         color: $Cyan;
+        margin-bottom: 20px;
       }
       h3 {
         color: $BrightYellow;
+        margin-bottom: 10px;
       }
       h4 {
         color: $GrayishBlue;
+        width: 90%;
+        font-weight: 400;
       }
     }
     .b {
-      border: 1px solid black;
+      background-color: $Cyan;
+      color: white;
+      padding: 40px;
+      border-radius: 0 0 0 10px;
+      h3:first-child {
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      h3:nth-child(2) {
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 5px;
+        span {
+          font-size: 12px;
+          display: inline-block;
+          font-weight: 400;
+          align-items: center;
+          color: $LightGray;
+          margin-left: 7px;
+          transform: translateY(-5px);
+        }
+      }
+      h3:nth-child(3) {
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+      button {
+        display: inline-block;
+        width: 100%;
+        padding: 15px;
+        background-color: $BrightYellow;
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
     }
     .c {
-      border: 1px solid black;
+      background-color: #4abebd;
+      color: white;
+      padding: 40px;
+      border-radius: 0 0 10px 0;
+      h3 {
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+      p {
+        font-weight: 400;
+        color: $LightGray;
+        font-size: 15px;
+      }
     }
   }
 }
