@@ -2,6 +2,9 @@
 
 ![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)
 
+## Live Site
+Click here to [Live Site](https://single-price-grid-component-two-iota.vercel.app/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
